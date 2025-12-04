@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LearnPro — Online Learning Platform</title>
+
+  <!-- Optional: Google Font (remove if you want only system fonts) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<link rel="stylesheet" href="style.css">
+<body>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="#">LearnPro</a>
+
+      <ul class="nav-links" role="navigation" aria-label="Main navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="cta">Sign In</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner container">
+        <h1>Upgrade your skills with real-world projects</h1>
+        <p>Learn from expert instructors. Build a portfolio. Get hired.</p>
+        <form class="hero-search" action="#" aria-label="Search courses">
+          <input type="search" placeholder="Search courses (e.g. Web Dev, Python)" />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- COURSES -->
+    <section id="courses" class="courses container">
+      <header class="section-head">
+        <h2>Featured Courses</h2>
+        <p>Popular picks — hands-on, project-based learning.</p>
+      </header>
+
+      <ul class="course-grid" aria-live="polite">
+        <li class="course-card">
+          <img src="https://source.unsplash.com/800x600/?coding" alt="Web Development" />
+          <div class="card-body">
+            <h3>Web Development</h3>
+            <p class="meta">HTML • CSS • JavaScript</p>
+            <p class="desc">Build responsive websites and interactive UI from scratch.</p>
+            <div class="card-footer">
+              <span class="price">₹499</span>
+              <a class="btn" href="#">Enroll</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="course-card">
+          <img src="https://source.unsplash.com/800x600/?python" alt="Python Programming" />
+          <div class="card-body">
+            <h3>Python Programming</h3>
+            <p class="meta">Beginner → Advanced</p>
+            <p class="desc">Data structures, automation, web-scraping and more.</p>
+            <div class="card-footer">
+              <span class="price">₹599</span>
+              <a class="btn" href="#">Enroll</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="course-card">
+          <img src="https://source.unsplash.com/800x600/?marketing" alt="Digital Marketing" />
+          <div class="card-body">
+            <h3>Digital Marketing</h3>
+            <p class="meta">SEO • Ads • Social</p>
+            <p class="desc">Grow brands using modern marketing strategies.</p>
+            <div class="card-footer">
+              <span class="price">₹399</span>
+              <a class="btn" href="#">Enroll</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="pricing">
+      <div class="container">
+        <header class="section-head">
+          <h2>Pricing Plans</h2>
+          <p>Choose a plan that fits your learning goals.</p>
+        </header>
+
+        <div class="pricing-grid">
+          <article class="price-card">
+            <h3>Basic</h3>
+            <p class="cost">₹499 <span>/ month</span></p>
+            <ul class="features">
+              <li>10+ Courses</li>
+              <li>Community access</li>
+              <li>Basic certificates</li>
+            </ul>
+            <button class="btn-outline">Choose Basic</button>
+          </article>
+
+          <article class="price-card featured">
+            <h3>Pro</h3>
+            <p class="cost">₹999 <span>/ month</span></p>
+            <ul class="features">
+              <li>All courses</li>
+              <li>Certificate & projects</li>
+              <li>Priority support</li>
+            </ul>
+            <button class="btn">Choose Pro</button>
+          </article>
+
+          <article class="price-card">
+            <h3>Premium</h3>
+            <p class="cost">₹1499 <span>/ month</span></p>
+            <ul class="features">
+              <li>1:1 Mentorship</li>
+              <li>Career coaching</li>
+              <li>Interview prep</li>
+            </ul>
+            <button class="btn-outline">Choose Premium</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact container">
+      <header class="section-head">
+        <h2>Contact Us</h2>
+        <p>Questions? Send us a message — we reply within 24 hours.</p>
+      </header>
+
+      <form class="contact-form" action="#" method="post" aria-label="Contact form">
+        <div class="form-row">
+          <label>
+            <span>Full name</span>
+            <input type="text" name="name" required />
+          </label>
+
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required />
+          </label>
+        </div>
+
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Send Message</button>
+          <button type="reset" class="btn-outline">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 LearnPro • All rights reserved</p>
+      <ul class="social">
+        <li><a href="#" aria-label="Twitter">Twitter</a></li>
+        <li><a href="#" aria-label="Facebook">Facebook</a></li>
+        <li><a href="#" aria-label="Instagram">Instagram</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
